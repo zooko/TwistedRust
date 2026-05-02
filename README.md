@@ -225,3 +225,8 @@ Your footnote is correct and, if anything, understates how direct the influence 
 
 ---
 
+Added by me (Zooko) manually afterward:
+
+But what if you need to use multiple CPUs in the same process! The above works only for a single thread!
+
+You can have multiple threads, with exactly one reactor per thread and exactly one thread per reactor, and you will retain *all* of the safety and testability benefits shown above. :-)
